@@ -1,0 +1,9 @@
+<h1>Awesome quotes</h1>
+<ul>
+   <div *ngFor='let quote of quotes; let i = index'>
+      <li>{{quote.name}}</li>
+      <button (click)="toggleDetails(i)">Toggle Details</button>
+      <app-quote-details *ngIf = "quote.showAuthorName" [quote]='quote' (isRead) = 'deleteQuote($event,i)'></app-quote-details>
+   </div>
+
+</ul>
