@@ -14,6 +14,10 @@ export class QuoteDetailsComponent implements OnInit {
       this.isRead.emit(read);
    }
 
+   
+
+   }
+
   constructor() { }
 
   ngOnInit() {

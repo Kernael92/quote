@@ -3,7 +3,7 @@
    <div *ngFor='let quote of quotes; let i = index'>
       <li>{{quote.name}} Created on {{quote.creationDate|date|uppercase}} </li>
       <button (click)="toggleDetails(i)">Toggle Details</button>
-      <app-quote-details *ngIf = "quote.showAuthorName" [quote]='quote' (isRead) = 'deleteQuote($event,i)'></app-quote-details>
+      <app-quote-details *ngIf = "quote.showAuthorName" [quote]='quote' (isRead) = 'deleteQuote($event,i)' ></app-quote-details>
    </div>
 
 </ul>

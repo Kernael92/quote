@@ -15,6 +15,7 @@ export class QuoteComponent implements OnInit {
 
 
   ]
+ 
   deleteQuote(isRead,index){
      if(isRead){
         let toDelete = confirm('Are you sure you want to delete this quote?')
